@@ -1,0 +1,9 @@
+{
+  "name": "Entre Nous",
+  "short_name": "Entre Nous",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#17151d",
+  "theme_color": "#17151d",
+  "description": "Jeu de cartes de conversation à deux"
+}

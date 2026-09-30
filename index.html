@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#17151d">
+<link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css">
+<title>Entre Nous</title>
+</head>
+<body>
+<main>
+<header><div><h1>Entre Nous</h1><p>Des questions, simplement.</p></div><button id="reset" aria-label="Recommencer">↻</button></header>
+<section class="toolbar"><select id="filter">
+<option value="all">Toutes les cartes</option><option>Léger</option><option>Découverte</option>
+<option>Personnel</option><option>Complicité</option><option>Oser</option>
+</select><span id="counter"></span></section>
+<div id="who">À toi</div>
+<section id="card" tabindex="0"><span id="category"></span><div id="question"></div><small>Toucher la carte pour continuer</small></section>
+<nav><button id="prev">← Précédente</button><button id="next">Suivante →</button></nav>
+<footer>Chacun peut passer une question, sans avoir à se justifier.</footer>
+</main>
+<script src="app.js"></script>
+</body></html>
