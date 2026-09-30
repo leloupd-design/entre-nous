@@ -10,3 +10,4 @@ header button{font-size:1.5rem;padding:7px 14px}.toolbar{display:flex;justify-co
 small{text-align:center;color:#8f8798}nav{display:flex;gap:10px;margin-top:18px}nav button{flex:1}footer{text-align:center;color:#8f8798;font-size:.82rem;margin-top:auto;padding-top:22px}
 .pop{animation:pop .22s ease}@keyframes pop{0%{transform:scale(.97);opacity:.5}100%{transform:scale(1);opacity:1}}
 @media(display-mode:standalone){body{padding-top:env(safe-area-inset-top)}}
+#random{font-weight:700;font-size:1.02rem}

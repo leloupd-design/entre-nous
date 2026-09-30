@@ -22,12 +22,22 @@ function nextCard() {
   card.classList.remove('pop'); void card.offsetWidth; card.classList.add('pop');
   cat.textContent=item.c; q.textContent=item.q; turn++; update();
 }
+
+function randomCard() {
+  if(!deck.length) { q.textContent='Toutes les cartes ont été jouées 🎉'; cat.textContent='FIN'; return; }
+  const i=Math.floor(Math.random()*deck.length);
+  const item=deck.splice(i,1)[0]; history.push(item);
+  card.classList.remove('pop'); void card.offsetWidth; card.classList.add('pop');
+  cat.textContent=item.c; q.textContent=item.q; turn++; update();
+}
+
 function previous() {
   if(history.length<2) return;
   deck.push(history.pop()); const item=history[history.length-1];
   cat.textContent=item.c; q.textContent=item.q; turn=Math.max(0,turn-1); update();
 }
 document.getElementById('next').onclick=nextCard;
+document.getElementById('random').onclick=randomCard;
 document.getElementById('prev').onclick=previous;
 document.getElementById('reset').onclick=buildDeck;
 document.getElementById('filter').onchange=e=>{mode=e.target.value;buildDeck();nextCard();};
